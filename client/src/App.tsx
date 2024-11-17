@@ -12,10 +12,11 @@ function App() {
 	)
 
 	// TODO: Use a better loading component
-	if (!data) return <>Loading Data ...</>
+	if (!data) return <Box data-test-id="loading-state">Loading Data ...</Box>
 
 	// TODO: Use a better error handling component
-	if (data.Status !== "OK") return <>An error has occurred.</>
+	if (data.Status !== "OK")
+		return <Box data-test-id="error-state">An error has occurred.</Box>
 
 	return (
 		<Box px={10}>

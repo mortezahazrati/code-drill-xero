@@ -20,7 +20,7 @@ export function BalanceReportTable({ reports }: BalanceReportTableProps) {
 
 	return (
 		<TableContainer component={Paper}>
-			<Table aria-label="spanning table">
+			<Table data-test-id="balance-report-table" aria-label="spanning table">
 				<TableHead
 					sx={{
 						backgroundColor: "primary.main",
@@ -45,7 +45,7 @@ export function BalanceReportTable({ reports }: BalanceReportTableProps) {
 						switch (row.RowType) {
 							case "Header": {
 								const { Cells } = row
-								console.log(Cells)
+
 								return (
 									<TableRow key={row.RowType + +index}>
 										{Cells.map(cell => (
