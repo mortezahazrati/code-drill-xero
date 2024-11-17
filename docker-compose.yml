@@ -1,0 +1,34 @@
+services:
+  xero:
+    container_name: xero
+    image: jaypeng2015/show-me-the-money
+    networks:
+      - xero-network
+    ports:
+      - "3000:3000"
+  server:
+    container_name: server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    networks:
+      - xero-network
+    ports:
+      - "4000:4000"
+    depends_on:
+      - xero
+    restart: always
+  client:
+    container_name: client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - xero-network
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server
+networks:
+  xero-network:
+    driver: bridge
