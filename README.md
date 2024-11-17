@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/88096473-4dd6-455b-8194-ab647ee4fe9a
 - After successfully running the `docker-compose up -d --build` command, If you visit your Docker Desktop, then you can access the running services like below:
 
 
-https://github.com/user-attachments/assets/77f1a3f9-afaa-4923-8ed0-8aebac150d61
+
 
 
 - The services will be accessible as follows:
