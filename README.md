@@ -31,8 +31,16 @@ https://github.com/user-attachments/assets/af8b03e1-7d92-4dc8-b606-99adb9a6cfd5
 
 https://github.com/user-attachments/assets/5c19d205-e11d-46bb-8285-0105f8af659a
 
-### To run tests:
+### To Run Tests:
 
 - To run `client` tests, in terminal navigate into `client` folder, then run `npm test`, this command is setup so that it sets up docker and services and then will execute the tests against them. You should see the below flow after running the command:
 
+
+https://github.com/user-attachments/assets/67753426-12c4-48aa-85db-2f0289d1e35b
+
+
 - To run `server` tests, in terminal navigate into `server` folder, then run `npm test`, this command is setup so that it sets up docker and services and then will execute the tests against them. You should see the below flow after running the command:
+
+
+https://github.com/user-attachments/assets/9953f751-fee9-49bc-8cf9-7bf7c5990fa0
+
